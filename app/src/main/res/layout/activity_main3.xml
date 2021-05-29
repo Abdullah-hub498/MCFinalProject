@@ -6,64 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity3">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/background"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp" />
-
     <TextView
         android:id="@+id/textView2"
         android:layout_width="311dp"
         android:layout_height="59dp"
-        android:text="Fundriser Account SignUp"
-        android:textColor="#FFFFFF"
+        android:text="@string/fundriser_account_signup"
+        android:textColor="@color/black"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.089" />
+        app:layout_constraintVertical_bias="0.084" />
 
     <EditText
         android:id="@+id/editTextTextPersonName"
         android:layout_width="332dp"
         android:layout_height="60dp"
+        android:layout_marginTop="64dp"
         android:ems="10"
-        android:hint="UserName"
+        android:hint="@string/username"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="43dp"
-        tools:layout_editor_absoluteY="228dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="332dp"
         android:layout_height="57dp"
+        android:layout_marginTop="28dp"
         android:ems="10"
-        android:hint="Email"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
         android:inputType="textEmailAddress"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
-        tools:layout_editor_absoluteY="321dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="330dp"
         android:layout_height="58dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints=""
         android:ems="10"
-        android:hint="Password"
+        android:hint="@string/password"
         android:inputType="textPassword"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        tools:layout_editor_absoluteY="412dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="202dp"
         android:layout_height="50dp"
-        android:layout_marginStart="60dp"
-        android:text="Create account"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/create_account"
         app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        tools:layout_editor_absoluteY="513dp" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
